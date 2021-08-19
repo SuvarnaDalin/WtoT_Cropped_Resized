@@ -157,7 +157,7 @@ if img_data is not None:
     
     ## Original image came from cv2 format, fromarray convert into PIL format
     img_file1 = 'Cropped.png'
-    st.markdown(get_image_download_link(out_image,img_file1,'Download '+img_file1), unsafe_allow_html=True)
+    st.markdown(get_image_download_link(crop_image,img_file1,'Download '+img_file1), unsafe_allow_html=True)
     
     ######### Resizing Image #############
     fixed_height = 420
@@ -183,5 +183,4 @@ if img_data is not None:
     
     ## Original image came from cv2 format, fromarray convert into PIL format
     img_file2 = 'Resized.png'
-    st.markdown(get_image_download_link(out_image,img_file2,'Download '+img_file2), unsafe_allow_html=True)
-    
+    st.markdown(get_image_download_link(resized,img_file2,'Download '+img_file2), unsafe_allow_html=True)
